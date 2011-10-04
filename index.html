@@ -1,0 +1,109 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Report Web Forgery</title>
+  <meta name="description" content="Tool for reporting suspected web forgeries">
+  <meta name="author" content="Matjaž Horvat">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    
+    <header id="head">
+      <a class="mozilla" href="http://www.mozilla.org/">visit <span>mozilla</span></a>
+      <a href="http://mozilla.org/en-US/firefox/" id="back-link">Go to mozilla.org/firefox</a>
+    </header>
+
+    <div id="main" role="main">      
+      <header>
+        <img id="logo" src="img/logo-only.png">
+        <h1>Report Web Forgery</h1>
+        <h2>Thank you for helping us keep the web safe from <a tagret="_blank" href="http://www.mozilla.org/firefox/phishing-protection/">phishing</a> sites.</h2>
+      </header>
+      
+      <section>
+		<form>
+		
+  	      <label for="url">URL of the site.</label>
+	      <input type="text" name="url" class="url" placeholder="http://">
+	  
+	      <label for="description">Please add your comment below (optional).</label>
+	      <textarea name="description" class="description"></textarea>
+		
+		  <p class="google">Phishing Protection in Firefox is powered by Google, and the information you submit below will be sent to Google and used to improve this feature. Your report will be anonymous in accordance with Google's <a href="http://www.google.com/privacy.html">privacy policy</a>.</p>
+		
+		  <div class="wrapper">
+		    <a href="#" class="button button-alt">Submit Report<span> &raquo;</span></a>
+		    <aside class="incorrect">
+			    If you believe the Phishing Protection feature is warning users of misleading activity on what is actually a safe page, please <a href="http://www.google.com/safebrowsing/report_error/?tpl=mozilla">report the incorrect forgery alert</a>.
+		    </aside>
+		  </div>
+		
+		</form>
+      </section>
+    </div>
+
+    <footer id="copyright">
+		<p id="footer-links">
+			<a href="/en-US/privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp;
+			<a href="/en-US/about/legal.html">Legal Notices</a> &nbsp;|&nbsp;
+			<a href="/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a>
+		</p>
+		<p>Except where otherwise <a href="/en-US/about/legal.html#site">noted</a>, content on this site is licensed under the <br />
+		<a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.</p>
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
